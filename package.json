@@ -1,0 +1,22 @@
+{
+    "name": "Ymal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2"
+    },
+    "dependencies": {
+        "@types/js-yaml": "^4.0.9",
+        "js-yaml": "^4.1.0",
+        "ts-node": "^10.9.2",
+        "yaml": "^2.6.1"
+    }
+}
