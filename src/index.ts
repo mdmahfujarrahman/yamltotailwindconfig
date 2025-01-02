@@ -3,7 +3,6 @@ import yaml from "js-yaml";
 import YAML from "yaml";
 import { execSync } from "child_process";
 
-
 //  Main Style interface
 
 interface IStyleConfig {
@@ -131,9 +130,6 @@ const YAMLConverter: IYamlConverter<IStyleConfig> = {
 interface IStyleConfigConverter<T, K> {
     configConverter: (response: T) => K
 }
-
-
-
 
 
 
