@@ -1,0 +1,105 @@
+global:
+  darkMode: true 
+layout:
+  container:
+    maxWidth: "1400px"
+    padding: "2rem"
+  spacing:
+    small: "1.125rem" # 18px
+    medium: "1.875rem" # 30px
+    large: "6.25rem" # 100px
+    extraLarge: "6.875rem" # 110px
+    extraExtraLarge: "11.25rem" # 180px
+
+typography:
+  links:
+    default:
+      color: "hsl(var(--primary))"
+      textDecoration: "underline"
+    hover:
+      color: "hsl(var(--secondary))"
+
+colors:
+  border: "hsl(var(--border))"
+  input: "hsl(var(--input))"
+  ring: "hsl(var(--ring))"
+  background: "hsl(var(--background))"
+  foreground: "hsl(var(--foreground))"
+  primary:
+    default: "hsl(var(--primary))"
+    foreground: "hsl(var(--primary-foreground))"
+  secondary:
+    default: "hsl(var(--secondary))"
+    foreground: "hsl(var(--secondary-foreground))"
+  destructive:
+    default: "hsl(var(--destructive))"
+    foreground: "hsl(var(--destructive-foreground))"
+  muted:
+    default: "hsl(var(--muted))"
+    foreground: "hsl(var(--muted-foreground))"
+  accent:
+    default: "hsl(var(--accent))"
+    foreground: "hsl(var(--accent-foreground))"
+  popover:
+    default: "hsl(var(--popover))"
+    foreground: "hsl(var(--popover-foreground))"
+  card:
+    default: "hsl(var(--card))"
+    foreground: "hsl(var(--card-foreground))"
+  blueShades:
+    lightest: "#F7FBFF"
+    lighter: "#ECF7FF"
+    light: "#E9F0F7"
+    medium: "#96CEFD"
+    dark: "#036ABE"
+    darkest: "#012D50"
+  slateShades:
+    dark: "#1E2A3B"
+    darker: "#0F182A"
+    darkest: "#020618"
+  greenShades:
+    lightest: "#E8FEE3"
+    lighter: "#A2F794"
+    medium: "#25C317"
+    darker: "#1BA611"
+    darkest: "#092909"
+
+borderRadius:
+  large: "var(--radius)"
+  medium: "calc(var(--radius) - 2px)"
+  small: "calc(var(--radius) - 4px)"
+
+animations:
+  keyframes:
+    accordionOpen:
+      from:
+        height: "0"
+      to:
+        height: "var(--content-height)"
+    accordionClose:
+      from:
+        height: "var(--content-height)"
+      to:
+        height: "0"
+  transitions:
+    accordionOpen: "accordion-open 0.2s ease-out"
+    accordionClose: "accordion-close 0.2s ease-out"
+
+components:
+  button:
+    default:
+      backgroundColor: "var(--primary)"
+      color: "white"
+      padding: "12px 24px"
+      borderRadius: "8px"
+      fontSize: "1rem"
+    hover:
+      backgroundColor: "var(--primary-dark)"
+  card:
+    default:
+      backgroundColor: "var(--background)"
+      padding: "20px"
+      borderRadius: "16px"
+      shadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+    hover:
+      shadow: "0 6px 12px rgba(0, 0, 0, 0.15)"
